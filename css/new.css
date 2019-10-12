@@ -1,0 +1,52 @@
+.incon
+{
+	display :inline;
+}
+.p1
+{
+	display:inline-block;
+	width:50%;
+	margin:0;
+	
+	
+}
+.p2
+{
+	display:inline-block;
+	width:49.6%;
+	margin:0;
+	
+	height:400px;
+	vertical-align:top;
+}
+.l_f
+{
+	float:left;
+	margin:0;
+	padding:10px 8px;
+	border-bottom:1px solid #ccff00;
+}
+.p1 p,
+{
+	font-weight:700;
+	color:#D7E31F;
+}
+#new_ul
+{
+	font-weight:700;
+}
+.img-responsive1
+{
+	height:140px;
+	border:1ps solid grey;
+	padding:5px;
+}
+.chat_bot_container
+{
+	border:1px solid #333;
+	margin:0 auto;
+	width:500px;
+	height:500px;
+	
+	
+}
