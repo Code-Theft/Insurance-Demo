@@ -1,0 +1,23 @@
+{
+  "name": "tax",
+  "utterances": {
+    "en": [
+      " tax benefits",
+      "tax benefit",
+      "tax"
+    ]
+  },
+  "slots": [
+    {
+      "id": "SHyqqJRtERLG74JpecGf_",
+      "name": "tax_names",
+      "entities": [
+        "any"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

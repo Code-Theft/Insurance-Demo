@@ -1,0 +1,89 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-GM2E3V",
+    "invalidContentId": "",
+    "keywords": {
+      "Join  our Family to enjoy full previllages.": [
+        "Join  our Family to enjoy full previllages.",
+        "Register"
+      ],
+      "Value for your lose.": [
+        "Value for your lose.",
+        "Claim"
+      ],
+      "Income tax exception for upto ₹1,00,000": [
+        "Income tax exception for upto ₹1,00,000",
+        "Benefits"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-GM2E3V {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "998836"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"contentId\":\"builtin_single-choice-GM2E3V\",\"invalidContentId\":\"\",\"keywords\":{\"Join  our Family to enjoy full previllages.\":[\"Join  our Family to enjoy full previllages.\",\"Register\"],\"Value for your lose.\":[\"Value for your lose.\",\"Claim\"],\"Income tax exception for upto ₹1,00,000\":[\"Income tax exception for upto ₹1,00,000\",\"Benefits\"]},\"config\":{\"nbMaxRetries\":3}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "459050"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count']) >= Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "440004"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "532256"
+    }
+  ]
+}

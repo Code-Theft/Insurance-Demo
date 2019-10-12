@@ -1,0 +1,24 @@
+[
+  {
+    "id": "dropdown-divP0b",
+    "formData": {
+      "message$en": "Are you here with issues regarding",
+      "buttonText$en": "Health Insurance or Vehicle Insurance",
+      "options$en": [
+        {
+          "label": "Health Insurance",
+          "value": ""
+        },
+        {
+          "label": " Vehicle Insurance"
+        }
+      ],
+      "width$en": 200,
+      "displayInKeyboard$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-10-12T03:19:14.921Z",
+    "modifiedOn": "2019-10-12T03:19:14.921Z"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "builtin_card-NR1S4y",
+    "formData": {
+      "title$en": "Health Insurance Policy",
+      "subtitle$en": "In our new health policy we covered all medical-day care treatment such as skin treatment  and Lasik surgery. The policy  covers a time period of 5 years. ",
+      "actions$en": [
+        {
+          "title": "Benifits",
+          "action": "Say something",
+          "text": "ben"
+        },
+        {
+          "title": "Documents required",
+          "action": "Say something",
+          "text": "doc"
+        },
+        {
+          "title": "Insurance renuwal ",
+          "action": "Say something",
+          "text": "ins"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-10-12T02:55:47.240Z",
+    "modifiedOn": "2019-10-12T02:57:53.519Z"
+  },
+  {
+    "id": "builtin_card-te4F_D",
+    "formData": {
+      "title$en": "Insurance Renewal",
+      "subtitle$en": "Please login to your account."
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-10-12T04:32:31.424Z",
+    "modifiedOn": "2019-10-12T04:32:31.424Z"
+  },
+  {
+    "id": "builtin_card-gaYtuz",
+    "formData": {
+      "title$en": "Vehicle insurance",
+      "subtitle$en": "Get your wheels on the road without any worries. We introduced Vehicle insurance policy  thus we understand how precise is your life. "
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-10-12T04:49:50.613Z",
+    "modifiedOn": "2019-10-12T04:49:50.613Z"
+  }
+]

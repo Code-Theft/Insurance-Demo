@@ -1,0 +1,35 @@
+{
+  "id": "mk2f7yhqv3_what_are_the_insurance_available",
+  "data": {
+    "answers": {
+      "en": [
+        "Currently there are two types of Insurance available "
+      ]
+    },
+    "questions": {
+      "en": [
+        "What are the insurance available?",
+        "what are the insurance available?",
+        "how many insurance are there?",
+        "How many insurance are there?",
+        "help",
+        "help!",
+        "money lost",
+        "lost",
+        "lost money",
+        "insurance details?",
+        "insurance details",
+        "details",
+        "about",
+        "chat bot service",
+        "services",
+        "talk"
+      ]
+    },
+    "redirectFlow": "main.flow.json",
+    "redirectNode": "choice",
+    "action": "text_redirect",
+    "category": "global",
+    "enabled": true
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "builtin_carousel-6xnx5O",
+    "formData": {
+      "items$en": [
+        {
+          "title": "Cummilative Benifits",
+          "subtitle": "An additional sum insured of 10% of annual sum insuured provided on each renewal for every claim-free year upto a maximum of 50%.",
+          "actions": []
+        },
+        {
+          "title": "Health Checkup cupon",
+          "subtitle": "1 cupon per indiviual policy and 2 cupon per floater policy will be offered."
+        },
+        {
+          "title": "Tax Benifits",
+          "subtitle": "Income tax exception for ₹1,00,000"
+        }
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-10-12T03:42:17.506Z",
+    "modifiedOn": "2019-10-12T03:42:17.506Z"
+  },
+  {
+    "id": "builtin_carousel-6pfZOv",
+    "formData": {
+      "items$en": [
+        {
+          "title": "Join  Our Community",
+          "subtitle": "Create a account and enjoy all privellages.",
+          "actions": [
+            {
+              "title": "Free Trial for 15 days",
+              "action": "Say something"
+            },
+            {
+              "title": "Premium Mebership",
+              "action": "Say something"
+            }
+          ]
+        }
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-10-12T05:45:41.006Z",
+    "modifiedOn": "2019-10-12T05:45:41.006Z"
+  },
+  {
+    "id": "builtin_carousel-tEEJSA",
+    "formData": {
+      "items$en": [
+        {
+          "title": "50,000 for fire accidents"
+        },
+        {
+          "title": "30,000 for theft"
+        }
+      ],
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-10-12T06:04:31.619Z",
+    "modifiedOn": "2019-10-12T06:04:31.619Z"
+  }
+]

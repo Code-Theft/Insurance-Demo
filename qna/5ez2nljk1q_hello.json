@@ -1,0 +1,33 @@
+{
+  "id": "5ez2nljk1q_hello",
+  "data": {
+    "answers": {
+      "en": [
+        "#!builtin_text-fMkCt_"
+      ]
+    },
+    "questions": {
+      "en": [
+        "hello",
+        "Hello",
+        "hello!",
+        "Hello!",
+        "Hi",
+        "hi",
+        "hi!",
+        "Hi!",
+        "Hey",
+        "Hey!",
+        "start",
+        "reboot",
+        "Start",
+        "Reboot"
+      ]
+    },
+    "redirectFlow": "main.flow.json",
+    "redirectNode": "entry",
+    "action": "text_redirect",
+    "category": "global",
+    "enabled": true
+  }
+}

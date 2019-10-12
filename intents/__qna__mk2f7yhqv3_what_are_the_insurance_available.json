@@ -1,0 +1,27 @@
+{
+  "name": "__qna__mk2f7yhqv3_what_are_the_insurance_available",
+  "contexts": [
+    "global"
+  ],
+  "utterances": {
+    "en": [
+      "What are the insurance available?",
+      "what are the insurance available?",
+      "how many insurance are there?",
+      "How many insurance are there?",
+      "help",
+      "help!",
+      "money lost",
+      "lost",
+      "lost money",
+      "insurance details?",
+      "insurance details",
+      "details",
+      "about",
+      "chat bot service",
+      "services",
+      "talk"
+    ]
+  },
+  "slots": []
+}

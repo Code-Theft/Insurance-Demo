@@ -1,0 +1,16 @@
+{
+  "sensitive": false,
+  "fuzzy": true,
+  "name": "tax",
+  "type": "list",
+  "occurences": [
+    {
+      "name": "What is the tax benefit of ABC Health Insurance?",
+      "synonyms": [
+        "tax benefits",
+        "tax value"
+      ]
+    }
+  ],
+  "pattern": ""
+}

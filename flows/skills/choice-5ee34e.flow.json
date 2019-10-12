@@ -1,0 +1,87 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-BDZnnt",
+    "invalidContentId": "",
+    "keywords": {
+      "1": [
+        "1",
+        " Health insurance",
+        "May I help you with Q&A regarding Health insurance."
+      ],
+      "2": [
+        "2",
+        "Vehicle insurance",
+        "May I help you with Q&A regarding Vehicle insurance."
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-BDZnnt {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "761346"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"contentId\":\"builtin_single-choice-BDZnnt\",\"invalidContentId\":\"\",\"keywords\":{\"1\":[\"1\",\" Health insurance\",\"May I help you with Q&A regarding Health insurance.\"],\"2\":[\"2\",\"Vehicle insurance\",\"May I help you with Q&A regarding Vehicle insurance.\"]},\"config\":{\"nbMaxRetries\":3}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "707427"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count']) >= Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "214814"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "838762"
+    }
+  ]
+}

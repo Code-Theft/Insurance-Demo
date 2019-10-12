@@ -1,0 +1,292 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-zwAzAv"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-5ee34e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice",
+      "flow": "skills/choice-5ee34e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [1]",
+          "condition": "temp['skill-choice-ret'] == \"1\"",
+          "node": "choice-ba7aa6"
+        },
+        {
+          "caption": "User picked [2]",
+          "condition": "temp['skill-choice-ret'] == \"2\"",
+          "node": "105"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "node-7a8d"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "34152feeff",
+      "name": "node-7a8d",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5cj4Dl"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-ba7aa6",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-ba7aa6",
+      "flow": "skills/choice-ba7aa6.flow.json",
+      "next": [
+        {
+          "caption": "User picked [1]",
+          "condition": "temp['skill-choice-ret'] == \"1\"",
+          "node": "100"
+        },
+        {
+          "caption": "User picked [2]",
+          "condition": "temp['skill-choice-ret'] == \"2\"",
+          "node": "101"
+        },
+        {
+          "caption": "User picked [3]",
+          "condition": "temp['skill-choice-ret'] == \"3\"",
+          "node": "102"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "9a3e139d97",
+      "name": "100",
+      "next": [
+        {
+          "condition": "true",
+          "node": "106"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-6xnx5O"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e9d2e707e9",
+      "name": "101",
+      "next": [
+        {
+          "condition": "true",
+          "node": "106-copy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uOPN-G"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6ebb662fe2",
+      "name": "102",
+      "next": [
+        {
+          "condition": "true",
+          "node": "106-copy-1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-te4F_D"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e98656c5dc",
+      "name": "105",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-vec"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_card-gaYtuz"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9356559f1d",
+      "name": "106",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-hoChxr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "87841f11e7",
+      "name": "106-copy",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-hoChxr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e2f85ac532",
+      "name": "106-copy-1",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-hoChxr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-24faa2",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-vec",
+      "flow": "skills/choice-24faa2.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Join  o...]",
+          "condition": "temp['skill-choice-ret'] == \"Join  our Family to enjoy full previllages.\"",
+          "node": "reg-1"
+        },
+        {
+          "caption": "User picked [Value f...]",
+          "condition": "temp['skill-choice-ret'] == \"Value for your lose.\"",
+          "node": "101-copy"
+        },
+        {
+          "caption": "User picked [Income ...]",
+          "condition": "temp['skill-choice-ret'] == \"Income tax exception for upto ₹1,00,000\"",
+          "node": "bene"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "b5364872bb",
+      "name": "reg-1",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_carousel-6pfZOv"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "55864fa1c4",
+      "name": "bene",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_carousel-tEEJSA"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "846c5ce415",
+      "name": "101-copy",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-uOPN-G"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0c71e218e1",
+      "name": "106-copy-1-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "reg-1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-hoChxr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "128974b8b2",
+      "name": "106-co89",
+      "next": [
+        {
+          "condition": "true",
+          "node": "bene"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-hoChxr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "5b9fc2fb79",
+      "name": "106-co90",
+      "next": [
+        {
+          "condition": "true",
+          "node": "101-copy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-hoChxr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}
